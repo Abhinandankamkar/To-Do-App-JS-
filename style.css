@@ -1,0 +1,178 @@
+:root{
+    --background: #06433a;
+    --primary-color: #2b50c0;
+    --secondary-color: #097385;
+    --accent-color: #ffae00;
+    --text-color: #F9F9F9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+form{
+    width: 400px; 
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    border: none;
+    border-radius: 10px;  
+    gap: 5px;
+
+}
+
+h1{
+    color: var(--accent-color);
+}
+.container{
+    margin-top: 10px;
+    position: relative;
+}
+#inputTask{
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: #0c0c0c;
+    color: white;
+}
+
+#btn{
+    cursor: pointer;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #4A4D57;
+    color: var(--accent-color);
+}
+#taskList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    
+}
+
+#taskSpan{
+    width: 250px;
+    overflow: hidden;
+    text-wrap: wrap;
+}
+
+#taskList li{
+    list-style: none;
+    padding: 5px;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.lists{
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 4px;
+
+}
+
+.complete{
+    background-color: #0fd1b4;
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 40%;
+    cursor: pointer;
+}
+.edit{
+    background-color: #dfc013;
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 40%;
+    cursor: pointer;
+}
+.delete{
+    background-color: #470000;
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 40%;
+    cursor: pointer;
+}
+
+.btns{
+    display: flex;
+    gap: 8px;
+}
+
+.complete:hover{
+    background-color: #0b7a6a;
+    transition: 200ms ease;
+}
+.delete:hover{
+    background-color: #080000;
+    transition: 200ms ease;
+}
+
+.strikes{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    background-color: #0a0909;
+    gap: 50px;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+.total{
+    width: 100px;
+}
+
+.completed{
+    width: 200px;
+}
+
+.clear{
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(114, 4, 4);
+    color: white;
+    cursor: pointer;
+}
+
+.clear:hover{
+    background-color: rgb(139, 7, 7);
+    color: rgb(0, 0, 0);
+    
+}
